@@ -13,12 +13,15 @@ app.use(bodyParser.json());
 app.use('/store/category',storeRouter);
 
 
+//Connect to Database
 mongoose.connect(
   "mongodb+srv://Tong:1234@stores.djz3f.mongodb.net/category?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
 
-app.listen(5000, () => {
-  console.log("Server run on port 5000");
+// Env Port
+const port = process.env.PORT || 5000
+app.listen(port, () => {
+  console.log(`Server Run On Port ${port}`);
 });
