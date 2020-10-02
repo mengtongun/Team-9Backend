@@ -99,6 +99,8 @@ app.get("/furniture/search/:store_name", async function (req, res) {
     res.status(500).send(err);
   }
 });
+
+//search fitness
 app.get("/fitness/search/:store_name", async function (req, res) {
   var regex = new RegExp(req.params.store_name, "i");
   const store = await fitnessModel.find({ store_name: regex });
