@@ -7,5 +7,8 @@ class Service{
         return axios.get(`${url}/${category_name}`);
     
     }
+    searchStore(text){
+        
+    }
 };
 export default Service;
