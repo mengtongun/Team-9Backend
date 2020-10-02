@@ -5,6 +5,6 @@ Backend Sever
 
 npm i express mongoose cors body-parser axios
 
-#Intall Node Modnitor
+#Intall Node Monitor
 
 npm i -D nodemon
