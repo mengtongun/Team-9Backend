@@ -4,14 +4,10 @@
 ### Install package
 
 ```
-npm i express mongoose cors body-parser axios
+npm install
 ```
 
-### Intall Node Monitor
 
-``` 
-npm i -D nodemon
-```
 
 ### Run Node Monitor
 ``` 
